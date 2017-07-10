@@ -1,0 +1,53 @@
+/*清楚所有元素默认的边距*/
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+}
+.firstLi{
+	float: left;
+	margin-left: 1px;
+	position: relative;
+}
+a{
+	text-decoration: none;
+	color: white;
+	display: block;
+	width: 200px;
+	line-height: 30px;
+	text-align: center;
+}
+li{
+	list-style-type: none; /*清楚list小圆点*/
+	width: 200px;
+	height: 30px;
+	line-height: 30px;
+	background-color: green;
+	margin-top: 1px;
+	/*border: 1px solid blue;*/
+
+}
+#nav{
+	/*border: 1px solid red;*/
+	width: 707px;
+	margin: 0 auto;
+	text-align: center;
+}
+.nav2{
+	position: absolute;
+	display: none;/*隐藏元素，并释放空间，其他元素可以占据该位置*/
+	/*visibility: hidden;*//*隐藏元素，并释放空间，其他元素不能占据该位置*/
+}
+/*鼠标悬浮效果*/
+a:hover{
+	color: black; /*非块元素-->块既元素*/
+	background-color: orange;
+	font-weight: bold;
+}
+/*鼠标点击效果*/
+a:active{
+	color: red;
+}
+li:hover ul{
+	display: block;/*显示隐藏的元素*/
+}
